@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    
+}
+
+.container{
+    /* background-color: red; */
+    position: relative;
+    top: 60px;
+    margin: 10px;
+}
+
+.heads{
+    position: relative;
+    top: 0;
+    background-color: aquamarine;
+    margin: 14px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.heads p{
+    margin-top: 30px; 
+    text-align: justify;
+    width: 99%;
+
+}
+
+.righthead{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 90px;
+
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+#head1{
+    background-color: gold;
+}
+#head2{
+    background-color: lightcoral;
+}
+#head3{
+    background-color: rgb(214, 123, 191);
+}
+
+
+
+/* responsive part */
+/* large devices */
+@media (min-width: 992px){
+    .col-lg-4{
+      float: left;  
+    }
+
+    .col-lg-4 {
+    width: 33.33%;
+    }
+
+}
+/* tab view */
+@media (min-width: 768px) and (max-width: 991px){
+    .col-lg-4 {
+      width: 50%;
+      float: left;
+    }
+    .col-lg-widetab{
+     width: 100%;
+     float: left;
+   }
+}
+
+/* mob view */
+@media (max-width: 767px){
+    .col-lg-4 {
+      width: 100%;
+      float: left;
+    }
+    
+}
